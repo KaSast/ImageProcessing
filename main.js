@@ -19,7 +19,6 @@ IOhandler.unzip(zipFilePath, pathUnzipped)
   .then((filePaths) => {
     filePaths.forEach(filePath => {
       if(path.extname(filePath) == fileExt) {
-        //console.log(path.join(pathProcessed,filePath));
         IOhandler.grayScale(path.join(pathUnzipped,filePath), path.join(pathProcessed,filePath));
       }
     })
